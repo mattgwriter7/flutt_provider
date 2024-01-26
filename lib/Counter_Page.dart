@@ -7,15 +7,12 @@ import 'package:provider/provider.dart';
 class Counter_Page extends StatelessWidget {
   const Counter_Page({super.key});
 
-  // (this page) variables
-  static const String filename = 'Counter_Page.dart';  
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: const Text( filename ),
+          title: const Text( 'Counter_Page.dart' ),
           centerTitle: true,
         ), 
         body: Container(

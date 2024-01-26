@@ -16,4 +16,8 @@ class Count with ChangeNotifier {
     notifyListeners();
   }
 
+  void reset() {
+    _count = -1;
+    notifyListeners();
+  }
 }

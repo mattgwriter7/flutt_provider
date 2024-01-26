@@ -8,15 +8,12 @@ import 'Count.dart';
 class End_Page extends StatelessWidget {
   const End_Page({super.key});
 
-  // (this page) variables
-  static const String filename = 'End_Page.dart';  
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: const Text( filename ),
+          title: const Text( 'End_Page.dart' ),
           centerTitle: true,
         ), 
         body: Container(

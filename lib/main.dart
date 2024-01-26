@@ -5,7 +5,7 @@ import 'Start_Page.dart';
 import 'Counter_Page.dart';
 import 'End_Page.dart';
 
-import 'Count.dart';      // this is the provider
+import 'Count.dart';      // this is the Count() provider model 
 
 void main() {
 runApp( MultiProvider (
@@ -19,8 +19,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-        
+      debugShowCheckedModeBanner: true,
       initialRoute: 'Start_Page',
       routes: {
         'Start_Page': (context) => const Start_Page(),
