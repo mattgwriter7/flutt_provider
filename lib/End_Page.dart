@@ -1,6 +1,9 @@
 // ignore_for_file: camel_case_types
 
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import 'Count.dart';
 
 class End_Page extends StatelessWidget {
   const End_Page({super.key});
@@ -20,9 +23,12 @@ class End_Page extends StatelessWidget {
           color: Colors.transparent,
           child: Center(
             child: ElevatedButton(
-              child: Text( '<< Counter' ),
+              child: Text( 
+                '+1',
+                style: TextStyle( fontSize: 48)
+              ),
               onPressed: () {
-                Navigator.of(context).pushNamed('Counter_Page');         
+                context.read<Count>().increment();
                 return;
               },
             ),  

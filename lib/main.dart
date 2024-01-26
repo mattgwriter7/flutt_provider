@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
 import 'Start_Page.dart';
 import 'Counter_Page.dart';
 import 'End_Page.dart';
 
+import 'Count.dart';      // this is the provider
+
 void main() {
-runApp( MyApp() );
+runApp( MultiProvider (
+  providers: [ ChangeNotifierProvider(create: (_) => Count()),],
+  child: MyApp()) );
 }
 
 class MyApp extends StatelessWidget {
