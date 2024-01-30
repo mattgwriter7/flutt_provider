@@ -1,4 +1,4 @@
-# flutt_logo
+# flutt_provider
 Showing a colleague how to work with Provider package...
 
 ## Notes   
